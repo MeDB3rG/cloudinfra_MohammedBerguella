@@ -18,7 +18,7 @@ resource "aws_launch_template" "Launch_Template-BerguellaMohammed" {
     security_groups             = [aws_security_group.security_group_lt-BerguellaMohammed.id, var.sg_db, aws_security_group.security_group_lb-BerguellaMohammed.id, aws_security_group.security_group_ssh-BerguellaMohammed.id]
   }
 
-  vpc_security_group_ids = [  ]
+  vpc_security_group_ids = []
 
   tags = {
     Name = "instance-BerguellaMohammed"
